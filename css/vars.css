@@ -1,0 +1,12 @@
+:root {
+    --bg: #3a3a3a;
+    --bg-color: #1f1f1f;
+    --bg2-color: #F9F9F9;
+    --text-color: #ffffff;
+
+    /* Tamaños */
+    --title: 62px;
+    --title-2: 40px;
+    --text: 20px;
+    --text-2: 18px;
+}

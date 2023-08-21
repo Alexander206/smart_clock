@@ -1,13 +1,13 @@
 :root {
     --bg: #3a3a3a;
-    --bg-color: #1f1f1f;
-    --bg2-color: #F9F9F9;
-    --text-color: #ffffff;
+    --bg-color: #141414;
+    --bg2-color: #2b2d2e;
+    --text-color: #e2e2e2;
 
     /* Tamaños */
     --title: 62px;
     --title-2: 40px;
-    --title-3: 28px;
+    --title-3: 34px;
     --text: 20px;
     --text-2: 18px;
 }

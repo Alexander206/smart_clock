@@ -62,6 +62,7 @@ body {
 }
 
 .first_container .first_text h2 {
+    color: var(--text-color);
     font-size: var(--title-2);
     text-align: center;
     max-width: 700px;
@@ -69,6 +70,7 @@ body {
 }
 
 .first_container .first_text p {
+    color: var(--text-color);
     font-size: var(--text);
     text-align: center;
     font-weight: normal;
@@ -142,13 +144,13 @@ body {
 
 .functions_text h2 {
     font-size: var(--title-2);
-    color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
 }
 
 .functions_text p {
     font-size: var(--text);
-    color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
     font-weight: normal;
     width: 100%;
@@ -171,7 +173,7 @@ body {
     justify-content: center;
     gap: 20px;
 
-    background-image: url("../assets/img/circle.png");
+    background-image: url("../assets/img/circle2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,11 +184,12 @@ body {
 }
 
 .functions_content .functions_img img {
-    width: 50%;
+    width: 40%;
 }
 
 .functions_content .functions_img img:first-child {
     position: relative;
+    width: 50%;
     left: 20px;
     transform: scaleX(-1);
     rotate: -15deg;
@@ -230,14 +233,15 @@ body {
 
 .functions_grid div h4 {
     width: 100%;
-    color: var(--bg-color);
-    font-size: var(--text-2);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: var(--text);
     text-align: center;
 }
 
 .functions_grid div p {
     width: 100%;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: var(--text-2);
     text-align: center;
     font-weight: normal;
@@ -273,7 +277,6 @@ body {
 .complete_container .complete_text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 20px;
     width: 100%;
@@ -284,15 +287,18 @@ body {
 }
 
 .complete_container .complete_text h2 {
-    font-size: var(--title-2);
-    text-align: center;
+    color: var(--text-color);
+    font-size: var(--title-3);
+    margin-bottom: 20px;
+    max-width: 800px;
 }
 
 .complete_container .complete_text p {
+    color: var(--text-color);
     font-size: var(--text);
-    text-align: center;
+
     width: 100%;
-    max-width: 840px;
+    max-width: 800px;
 }
 
 .complete_container .complete_text .complete_icons {
@@ -333,7 +339,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgb(31, 31, 31);
-    background: linear-gradient(180deg, rgba(31, 31, 31, 0) 75%, rgba(31, 31, 31, 1) 100%);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0) 75%, rgba(20, 20, 20, 1) 100%);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(0px);
     z-index: 0;
@@ -351,6 +357,20 @@ body {
     background-image: url("../assets/img/img6_wave.svg");
 }
 
+.complete_container .complete_img.section6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(31, 31, 31);
+    background: linear-gradient(180deg, rgba(43, 45, 46, 0) 75%, rgba(43, 45, 46, 1) 100%);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(0px);
+    z-index: 0;
+}
+
 .complete_container .complete_img img {
     width: 80%;
     max-width: 600px;
@@ -365,7 +385,7 @@ body {
     justify-content: center;
 
     width: 100%;
-    background-color: var(--bg-color);
+    background-color: var(--bg2-color);
     padding: 60px 0;
 }
 
@@ -379,12 +399,14 @@ body {
 }
 
 .grid_text h2 {
+    color: var(--text-color);
     text-align: center;
     font-size: var(--title-2);
     margin-bottom: 10px;
 }
 
 .grid_text p {
+    color: var(--text-color);
     font-size: var(--text);
     text-align: center;
 }
@@ -412,7 +434,8 @@ body {
     max-width: 420px;
     max-height: 340px;
     border-radius: 30px;
-    background-color: var(--bg);
+    box-shadow: 0px 0px 25px 2px rgb(31, 31, 31);
+    /* background-color: var(--bg); */
     margin: 0 30px;
 }
 
@@ -421,6 +444,7 @@ body {
     top: 20px;
     left: 20px;
     width: 50%;
+    color: var(--text-color);
     font-size: var(--text);
     font-weight: normal;
     align-self: flex-start;
@@ -460,11 +484,13 @@ body {
 }
 
 .water_container .water_text h2 {
+    color: var(--text-color);
     font-size: var(--title-2);
     text-align: center;
 }
 
 .water_container .water_text p {
+    color: var(--text-color);
     font-size: var(--text);
     text-align: center;
     font-weight: normal;
@@ -497,7 +523,7 @@ body {
     justify-content: center;
 
     width: 100%;
-    background-color: var(--bg2-color);
+    background-color: var(--bg-color);
 
     padding: 60px 0;
 }
@@ -524,7 +550,7 @@ body {
 }
 
 .download_container .download_text h2 {
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: 32px;
     text-align: center;
     margin-bottom: 30px;
@@ -556,7 +582,7 @@ body {
 }
 
 .download_container .download_nota {
-    color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
     font-size: var(--text-2);
     max-width: 840px;

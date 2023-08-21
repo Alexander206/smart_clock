@@ -470,6 +470,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--bg-color);
     width: 100%;
 }
 
@@ -514,6 +515,95 @@ body {
     }
 }
 
+/* * Seccion #8 | componente con iconos */
+
+.icons_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: var(--bg-color);
+    padding: 60px 0;
+}
+
+.icons_container .icons_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 30px;
+    margin-bottom: 120px;
+}
+
+.icons_container .icons_text h2 {
+    color: var(--text-color);
+    font-size: var(--title-2);
+    text-align: center;
+}
+
+.icons_container .icons_text p {
+    color: var(--text-color);
+    font-size: var(--text);
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    max-width: 840px;
+}
+
+.icons_container .icons_flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    gap: 40px;
+    width: 100%;
+    max-width: 1086px;
+}
+
+.icons_container .icons_flex .icons_flex_img {
+    position: relative;
+    width: 100%;
+    max-width: 240px;
+    border-radius: 20px;
+    background-color: var(--bg2-color);
+    padding: 80px 20px;
+}
+
+.icons_container .wrap {
+    margin-top: 120px;
+}
+
+.icons_container .wrap .iconst_flex_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 120px;
+}
+
+.icons_container .wrap .iconst_flex_item img {
+    width: 100%;
+}
+
+.icons_container .wrap .iconst_flex_item figcaption {
+    font-size: var(--text);
+    text-align: center;
+}
+
+/* responsive */
+@media (min-width: 800px) {
+    .icons_container .icons_flex .icons_flex_img.top {
+        bottom: 40px;
+    }
+
+    .icons_container .icons_flex .icons_flex_img.button {
+        top: 40px;
+    }
+}
+
 /* * Sección #9 | componente para descargar la aplicación  */
 
 .download_container {
@@ -523,7 +613,7 @@ body {
     justify-content: center;
 
     width: 100%;
-    background-color: var(--bg-color);
+    background-color: var(--bg2-color);
 
     padding: 60px 0;
 }

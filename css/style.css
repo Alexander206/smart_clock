@@ -58,11 +58,11 @@ body {
     align-items: start;
     justify-content: center;
     gap: 10px;
-    padding: 60px;
+    padding: 60px 20px;
 }
 
 .first_container .first_text h2 {
-    font-size: 50px;
+    font-size: var(--title-2);
     text-align: center;
     max-width: 700px;
     margin-bottom: 25px;
@@ -79,6 +79,7 @@ body {
     align-self: center;
     width: 100%;
     max-width: 440px;
+    padding: 0 20px;
     padding-bottom: 30px;
 }
 
@@ -126,7 +127,7 @@ body {
     gap: 20px;
 
     width: 100%;
-    background-color: var(--bg2-color);
+    background-color: var(--bg-color);
     padding: 100px 20px;
     padding-bottom: 50px;
 }
@@ -141,13 +142,13 @@ body {
 
 .functions_text h2 {
     font-size: var(--title-2);
-    color: var(--bg-color);
+    color: var(--bg2-color);
     text-align: center;
 }
 
 .functions_text p {
     font-size: var(--text);
-    color: var(--bg-color);
+    color: var(--bg2-color);
     text-align: center;
     font-weight: normal;
     width: 100%;
@@ -170,7 +171,7 @@ body {
     justify-content: center;
     gap: 20px;
 
-    background-image: url("../assets/img/circle.png");
+    background-image: url("../assets/img/circle2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,14 +230,12 @@ body {
 
 .functions_grid div h4 {
     width: 100%;
-    color: var(--bg-color);
     font-size: var(--text-2);
     text-align: center;
 }
 
 .functions_grid div p {
     width: 100%;
-    color: var(--bg-color);
     font-size: var(--text-2);
     text-align: center;
     font-weight: normal;
@@ -267,7 +266,7 @@ body {
     justify-content: center;
 
     width: 100%;
-    background-color: var(--bg);
+    background-color: var(--bg-color);
     padding: 60px 0;
 }
 
@@ -314,7 +313,7 @@ body {
     max-width: 420px;
     max-height: 340px;
     border-radius: 30px;
-    background-color: var(--bg-color);
+    background-color: var(--bg);
     margin: 0 30px;
 }
 
@@ -348,6 +347,93 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: var(--bg-color);
+}
+
+.complete_container .complete_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1040px;
+
+    padding: 80px 30px;
+    padding-bottom: 0;
+}
+
+.complete_container .complete_text h2 {
+    font-size: var(--title-2);
+    text-align: center;
+}
+
+.complete_container .complete_text p {
+    font-size: var(--text);
+    text-align: center;
+    width: 100%;
+    max-width: 840px;
+}
+
+.complete_container .complete_text .complete_icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    width: 100%;
+    margin-top: 30px;
+}
+
+.complete_container .complete_text .complete_icons img {
+    width: 50%;
+    max-width: 160px;
+}
+
+.complete_container .complete_img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+.complete_container .complete_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(31, 31, 31);
+    background: linear-gradient(180deg, rgba(31, 31, 31, 0) 75%, rgba(31, 31, 31, 1) 100%);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(0px);
+    z-index: 0;
+}
+
+.complete_container .complete_img.section4 {
+    background-image: url("../assets/img/img4_wave.svg");
+}
+
+.complete_container .complete_img.section5 {
+    background-image: url("../assets/img/img5_wave.svg");
+}
+
+.complete_container .complete_img.section6 {
+    background-image: url("../assets/img/img6_wave.svg");
+}
+
+.complete_container .complete_img img {
+    width: 80%;
+    max-width: 600px;
 }
 
 /* * Sección #7 | componente de agua */
